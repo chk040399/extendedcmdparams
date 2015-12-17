@@ -1,7 +1,7 @@
 # extendedcmdparams
 sample project to fix some issues for a helper class ExtendedCmdParams (MVVM)
 
-# projest summary
+# project summary
 this is a sample project to implement a helper class to use in MVVM Pattern
 
 the class is called ExtendeCommandParams and its purpose is to act use in XAML to indicate advanced params
@@ -61,7 +61,6 @@ RefObject Property is implemented as a Dependency Prop in order to use databindi
 
 An example is provided to reproduce the issue, When the command is invoked the parameters list is displayed
 
-What's Wrong with my implementation
+What's Wrong with my implementation ?
 
 
-What's Wrong with this impelmentation
