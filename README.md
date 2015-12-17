@@ -43,6 +43,8 @@ ExtendedCommandParam can pass to the commnd handler multiple objects indicated b
 
 One issue with this is the fact that the childs are new instances of objects, We cant add an existing object to the parameters Collection, so I created a class (ObjectProxy) which has the mission to act as a proxy to existing objects. The Add Method of IDictionary is taking into account the objet type before adding it, and if the object type is ObjectProxy, it'll not add the object itself but an object referenced by it (RefObject Property)
 
+```
+
    class ObjectProxy :DependencyObject
     {
         public object RefObject
@@ -57,7 +59,7 @@ One issue with this is the fact that the childs are new instances of objects, We
 
 
     }
-
+```
 
 # the issue
 RefObject Property is implemented as a Dependency Prop in order to use databinding, but the current implementation has an issue it always return a null value !!! :(
