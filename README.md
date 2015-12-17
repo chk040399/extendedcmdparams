@@ -7,6 +7,7 @@ this is a sample project to implement a helper class to use in MVVM Pattern
 the class is called ExtendeCommandParams and its purpose is to act use in XAML to indicate advanced params
 Examples
 
+```xml
 <Button Command="{Binding ConvertTextCommand}" Margin="5" IsDefault="True">Convert
 <Button.CommandParameter>
             <ViewModel:ExtendedCommandParam>
@@ -35,6 +36,8 @@ Examples
 
         </Button.CommandParameter>
     </Button>
+    
+```
     
 ExtendedCommandParam can pass to the commnd handler multiple objects indicated by XAML, for this reason ExtendedCommandParam implements IDictionary in order to be used in XAML as an element which can hold child elements
 
